@@ -1,0 +1,25 @@
+#test_form {
+    margin: 300px auto 0 auto;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background: linear-gradient(to top, black,darkgoldenrod, purple, black);
+    opacity: 0.8;
+;
+}
+
+#body_form {
+    background-color: black;
+}
+
+#fieldset_style {
+
+}
+
+#legend_style {
+    color: azure;
+}
+
+.input_form {
+    
+}
