@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+
+<body>
+<div id="test_form">
+  <form id= "MFTF"  method= "post"> <!--MFTF = My first test form -->
+
+    <fieldset>
+		<legend>Test Form</legend>
+		<label> Name</label>
+        <input type ="text"
+               name = "name"
+               id="Name"
+               required
+               placeholder ="Writhe your Name"
+               pattern="[A-Z][a-z]{1,19}"
+               title="Write the name with a capital letter and no more than 20 characters"
+               autofocus/>
+    </fieldset>
+<!--Якщо закоментувати 2 нижні <fieldset> то перший починає реагувати і виконувати атрибути -->
+	<fieldset>
+		<label for ="email"> Email</label>
+       <input type="email"
+              name="Email"
+              id= "email"
+              placeholder ="Writhe your Email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$"
+              title="Writh correct email please"
+              required/> <!--Довільні Англ літ. та символи від 0-9 знак "@" знову довільий текс "." 2-3 літери-->
+    </fieldset>
+
+	<fieldset>
+		<label for ="age"> Age</label>
+		<input type="number"
+               name ="age" id="age"
+               placeholder ="How old are u?"
+               max="100"
+               min="1"
+               required>
+		<!-- or "pattern="\d{1,9}\d{0,9}\d{0}""-->
+      </fieldset>
+  </form>
+</div>
+</body>
+</html>
